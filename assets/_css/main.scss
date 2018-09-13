@@ -10,9 +10,8 @@ $colors: (
 
 body {
     margin: 0;
-    //display: flex;
-    //flex-flow: column nowrap;
-
+    width: 100%;
+    
     ul {
         list-style: none
       }
@@ -20,7 +19,6 @@ body {
         text-decoration: none
       }
       
-
     nav {
         z-index: 1;
 
@@ -111,11 +109,10 @@ body {
     }
 
     footer {
-        height: 300px;
+        height: 100%;
         text-align: center;
-        background: rgb(55,55,55);
-        margin-bottom: 0;
-        margin-top: auto;
+        background: rgb(35,36,38);
+        margin: 0;
         padding: 20px;
         width: 100%;
         
@@ -132,7 +129,7 @@ body {
         .flex-rw {
             display: flex;
             flex-flow: row wrap;
-            width: 100%;
+            
           }
 
           .footer-social-section {
@@ -155,17 +152,19 @@ body {
           .footer-social-overlap {
             position: relative;
             z-index: 2;
-            background: rgb(55,55,55);
+            background: rgb(35,36,38);
             padding: 0 20px;
-            margin-top: 8px;
+            margin-top: 5px;
             margin-bottom: 8px;
           }
 
           .footer-social-connect {
             display: flex;
             align-items: center;
-            font: 3.5em "Oswald", sans-serif;
+            font-size: 3.35em;
+            font-weight: 900;
             color: #fff;
+            
           }
           .footer-social-small {
             font-size: 0.6em;
@@ -199,6 +198,73 @@ body {
           }
           
     }
+
+    @media only screen and (max-width: 768px) {
+        .footer-social-connect {
+          font-size: 2.5em;
+          display: flex;
+          align-items: center;
+          position: relative;
+        }
+        .footer-social-overlap > a {
+          font-size: 2.24em;
+        }
+        .footer-bottom-wrapper {
+          font-size: 1.3em;
+        }
+      }
+
+      @media only screen and (max-width: 568px) {
+        .footer-social-section {
+          justify-content: center;
+        }
+        .footer-social-section::after {
+          top: 25%;
+        }
+        .footer-social-connect {
+          margin-bottom: 10px;
+          padding: 0 10px;
+        }
+        .footer-social-overlap {
+          display: flex;
+          justify-content: center;
+        }
+        .footer-social-icons-wrapper {
+          width: 100%;
+          padding: 0
+        }
+        .footer-social-overlap > a:not(:first-child) {
+          margin-left: 20px;
+        }
+        .footer-bottom-section {
+          padding: 0 5px 10px 5px
+        }
+        .footer-bottom-wrapper {
+          text-align: center;
+          width: 100%;
+          margin-top: 10px
+        }
+      }
+
+      @media only screen and (max-width: 480px) {
+        .footer-social-overlap > a {
+          margin: auto
+        }
+        .footer-social-overlap > a:not(:first-child) {
+          margin-left: 0;
+        }
+      }
+      @media only screen and (max-width: 320px) {
+        .footer-social-connect {
+          font-size: 2.4em
+        }
+        .footer-social-overlap > a {
+          font-size: 2.24em
+        }
+        .footer-bottom-wrapper {
+          font-size: 1.3em
+        }
+      }
 
     
 }
