@@ -3,13 +3,12 @@
 	<head>
 		<title>Joe's portfolio</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="assets/_css/main.css" />
 	</head>
 	<body>
@@ -21,36 +20,37 @@
 			<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
 			  <ul class="navbar-nav">
 				<li class="nav-item lead">
-				  <a class="nav-link mr-sm-4" href="home">Home</a>
+				  <a class="nav-link text-info mr-sm-4" href="home">Home</a>
 				</li>
 				<li class="nav-item lead">
-				  <a class="nav-link mr-sm-4" href="about">About</a>
+				  <a class="nav-link text-info mr-sm-4" href="about">About</a>
 				</li>
 				<li class="nav-item lead">
-				  <a class="nav-link mr-sm-4" href="myWork">My work</a>
+				  <a class="nav-link text-info mr-sm-4" href="myWork">My work</a>
 				</li>  
 				<li class="nav-item lead">
-					<a class="nav-link mr-sm-4" href="contact">Contact</a>
+					<a class="nav-link text-info mr-sm-4" href="contact">Contact</a>
 				</li>   
 			  </ul>
 			</div>  
 		</nav>
 	
-		<header>
-			<div class="row">
-				<div class="myHeading col-sm" style="margin-bottom:0">
+		<header class="responsive">
+			<div class="headerDiv-content responsive">
+				<div class="myHeading">
 					<h1>Hey there!</h1>
 					<h2>I'm Joe Shindano</h2>
 					<p>a Software Developer</p>
 					<hr class="style">		
 					<br>
+					<pre>Sign up to get started</pre>
 					<form id="signup-form" method="post" action="#" class="signup">
 						<input type="email" name="email" id="email" placeholder="Email Address" />
 						<input type="submit" value="Sign Up" />
 					</form>
 				</div>
-				<div class="myImg col-sm-4">
-					<img src="images/img1.jpg" class="img-thumbnail img-responsive" alt="Photo" width="504" height="200">
+				<div class="myImg">
+					<img src="images/img1.jpg" class="img-thumbnail" alt="Photo" width="504" height="200">
 				</div>
 			</div>
 		</header>
