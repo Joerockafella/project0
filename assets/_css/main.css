@@ -43,7 +43,7 @@ body header .headerDiv-content {
   display: flex;
   max-width: 100%;
   height: auto;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 body header .myHeading {
@@ -95,6 +95,7 @@ body header .myHeading pre {
   font-size: 1.2em;
   margin: 0.75em 0 0.25em 0;
   color: #fff6bb;
+  margin-bottom: 10px;
 }
 
 body header .myImg {
@@ -172,13 +173,97 @@ body header .signup input[type=submit]:hover {
   }
 }
 
+body .row_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: auto;
+  padding: 20px;
+}
+
+body .row_flex .about_heading {
+  width: 100%;
+}
+
+body .row_flex .about_heading hr {
+  width: 20%;
+  margin: auto;
+}
+
+body .row_flex .about_heading h1 {
+  text-align: center;
+}
+
+body .row_flex .details_aboutMe_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin: 20px;
+}
+
+body .row_flex .details_aboutMe_row .details_aboutMe_row > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33%;
+  padding: 20px;
+  margin: 20px;
+}
+
+body .row_flex .details_aboutMe_row .myImg_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 80%;
+  padding-right: 0px;
+  padding-left: 20%;
+  margin-right: 0px;
+}
+
+body .row_flex .details_aboutMe_row .myInfo {
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+
+@media (max-width: 840px) {
+  body .row_flex .details_aboutMe_row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
 body footer {
   height: 100%;
   max-width: 100%;
   text-align: center;
   background: #232426;
   margin: 0;
-  padding: 10px;
+  padding: 20px;
+  display: block;
 }
 
 body footer .social_links {
@@ -191,18 +276,6 @@ body footer .social_links:visited {
 
 body footer .social_links:hover {
   color: #ccc;
-}
-
-body footer .footer_flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -ms-flex-direction: row;
-      flex-direction: row;
 }
 
 body footer .footer_section_1 {
