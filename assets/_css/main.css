@@ -297,6 +297,41 @@ body .row_flex .details_aboutMe_row .myInfo {
   }
 }
 
+body .row_flex .skills_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin: 20px;
+}
+
+body .row_flex .skills_section .skills_heading {
+  width: 40%;
+}
+
+body .row_flex .skills_section .skills_heading h3 {
+  float: right;
+}
+
+body .row_flex .skills_section .myTable {
+  width: 60%;
+  margin-left: 60px;
+}
+
+body .row_flex .skills_section .myTable table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  body .row_flex .skills_section .myTable table {
+    display: block;
+    overflow: hidden;
+  }
+}
+
 body footer {
   height: 100%;
   max-width: 100%;

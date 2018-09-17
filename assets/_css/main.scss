@@ -290,7 +290,37 @@ body {
             }
         }
  
+        .skills_section {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            margin: 20px;
 
+            .skills_heading {
+                width: 40%;
+
+                h3 {
+                    float: right;
+                }
+            }
+
+            .myTable {
+                width: 60%;
+                margin-left: 60px;
+
+                table {
+                    display: table;
+                    table-layout: fixed;
+                    width: 100%;    
+
+                    @include phone {
+                        display: block;
+                        overflow: hidden; 
+                    }
+                }
+
+            }
+        }
 
 
       }
