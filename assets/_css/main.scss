@@ -39,10 +39,7 @@ body {
     * {
         box-sizing: border-box;
       }
-    
-    ul {
-        list-style: none
-      }
+
       a {
         text-decoration: none
       }
@@ -61,7 +58,7 @@ body {
     .myNavLink {
         color: color(primary-light-blue);
     }
-
+    // Header Home page
     header {
         background-image:url(https://lh3.googleusercontent.com/-sG-RetTbsjk/W59XaVQG2wI/AAAAAAAAEL8/vJjH7LI5bsApSr1u9g9nJ5r4KLUgigSegCJoC/w530-h330-n-rw/image.png);
         height: 100%;
@@ -123,7 +120,7 @@ body {
             }
         }
 
-        .myImg {
+        .header_img {
             margin-left: auto;
             margin-right: auto;
             display: block;
@@ -208,11 +205,23 @@ body {
             hr {
                 width: 20%;
                 margin: auto;
+                display: block;
+                border-width: 3px;
+                background: #ccc;
+
+                @include tablet {
+                    width: 30%;
+                }
+
+                @include phone {
+                    width: 80%;
+                }
             }
 
             h1 {
                 text-align: center;
             }
+
         }
 
         .details_aboutMe_row {
@@ -228,9 +237,10 @@ body {
                 padding: 20px;
                 margin: 20px;
 
+
             }
 
-            .myImg_2 {
+            .myImg {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
@@ -238,6 +248,25 @@ body {
                 padding-right: 0px;
                 padding-left: 20%;
                 margin-right: 0px;
+
+                @include phone {
+                    width: 60%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 10px;
+                    padding:0px;
+                    border-radius: 40px;
+                }
+
+                img {
+                    @include phone {
+                        border-radius: 50%;
+                    }
+
+                    @include tablet {
+                        border-radius: 50%;
+                    }
+                }
     
             }
 
@@ -247,6 +276,11 @@ body {
                 flex-direction: column;
                 width: 100%;
                 padding: 20px;
+
+                @include phone {
+                    padding: 0px;
+                    margin: 0px;
+                }
             }
 
             @include desktop {
@@ -306,11 +340,15 @@ body {
             padding: 0 20px;
             margin-top: 5px;
             margin-bottom: 8px;
+
+            @include phone {
+                padding: 0px;
+            }
           }
 
           .footer_heading_text {
             align-items: center;
-            font-size: 3vw;//3.35em;
+            font-size: 3vw;
             font-weight: 900;
             color: color(primary);
             margin-bottom: 20px;
@@ -325,7 +363,7 @@ body {
           .footer_heading_smallText {
             font-size: 0.6em;
             padding: 0px 20px;
-            margin: 0px; //added
+            margin: 0px; 
           }
           .footer_overlap > a {
             font-size: 2.5em

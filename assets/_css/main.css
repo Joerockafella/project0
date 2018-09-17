@@ -7,10 +7,6 @@ body * {
           box-sizing: border-box;
 }
 
-body ul {
-  list-style: none;
-}
-
 body a {
   text-decoration: none;
 }
@@ -98,7 +94,7 @@ body header .myHeading pre {
   margin-bottom: 10px;
 }
 
-body header .myImg {
+body header .header_img {
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -192,6 +188,21 @@ body .row_flex .about_heading {
 body .row_flex .about_heading hr {
   width: 20%;
   margin: auto;
+  display: block;
+  border-width: 3px;
+  background: #ccc;
+}
+
+@media (max-width: 1380px) {
+  body .row_flex .about_heading hr {
+    width: 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  body .row_flex .about_heading hr {
+    width: 80%;
+  }
 }
 
 body .row_flex .about_heading h1 {
@@ -216,7 +227,7 @@ body .row_flex .details_aboutMe_row .details_aboutMe_row > div {
   margin: 20px;
 }
 
-body .row_flex .details_aboutMe_row .myImg_2 {
+body .row_flex .details_aboutMe_row .myImg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,6 +242,29 @@ body .row_flex .details_aboutMe_row .myImg_2 {
   margin-right: 0px;
 }
 
+@media (max-width: 480px) {
+  body .row_flex .details_aboutMe_row .myImg {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 0px;
+    border-radius: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  body .row_flex .details_aboutMe_row .myImg img {
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 1380px) {
+  body .row_flex .details_aboutMe_row .myImg img {
+    border-radius: 50%;
+  }
+}
+
 body .row_flex .details_aboutMe_row .myInfo {
   float: left;
   display: -webkit-box;
@@ -242,6 +276,13 @@ body .row_flex .details_aboutMe_row .myInfo {
           flex-direction: column;
   width: 100%;
   padding: 20px;
+}
+
+@media (max-width: 480px) {
+  body .row_flex .details_aboutMe_row .myInfo {
+    padding: 0px;
+    margin: 0px;
+  }
 }
 
 @media (max-width: 840px) {
@@ -306,6 +347,12 @@ body footer .footer_overlap {
   padding: 0 20px;
   margin-top: 5px;
   margin-bottom: 8px;
+}
+
+@media (max-width: 480px) {
+  body footer .footer_overlap {
+    padding: 0px;
+  }
 }
 
 body footer .footer_heading_text {
