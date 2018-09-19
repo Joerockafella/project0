@@ -3,12 +3,15 @@ $colors: (
     primary-light-blue: #8DB9ED,
     primary-dark-blue: #2F4F4F,
     primary-line-color: #ccc,
-    primary-dark: rgb(35,36,38)
+    primary-dark: rgb(35,36,38),
+    grey-color: #ddd,
+    light-grey-color: #f2f2f2
 );
 
 @function color($color-name){
     @return map-get($colors, $color-name );
 }
+
 
 $desktop: 1024px; 
 $phone: 480px;
@@ -72,7 +75,7 @@ body {
     .myNavLink {
         color: color(primary-light-blue);
     }
-    // Header Home page
+    /* Header Home page */
     header {
         background-image:url(https://lh3.googleusercontent.com/-sG-RetTbsjk/W59XaVQG2wI/AAAAAAAAEL8/vJjH7LI5bsApSr1u9g9nJ5r4KLUgigSegCJoC/w530-h330-n-rw/image.png);
         height: 100%;
@@ -238,7 +241,7 @@ body {
         }
   
       }
-//About Me Page
+/* About Me Page */
       .row_flex {
         display: flex;
         flex-flow: row wrap;
@@ -253,7 +256,7 @@ body {
                 margin: auto;
                 display: block;
                 border-width: 3px;
-                background: #ccc;
+                background: color(primary-line-color);
 
                 @include tablet {
                     width: 30%;
@@ -403,7 +406,7 @@ body {
       }
 
 
-// My work Page
+/* My work Page */
 
 .img_row {
     position: relative;
@@ -416,7 +419,7 @@ body {
     transition: .5s ease;
     backface-visibility: hidden;
     margin-bottom: 20px;
-
+    border: 1px solid color(primary-dark);
   }
 
 .img_overlay {
@@ -467,8 +470,130 @@ body {
 
     }
 
+    /* Contact page */
+
+    .get_inTouch {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
 
 
+    .row {
+        width: 100%;
+        margin: 0px;
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+.column {
+    float: left;
+    padding: 40px;
+    width: 100%; 
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 40%;
+}
+
+@include phone {
+    .column {
+        width: 100%;
+        padding: 10px;
+        }
+    }
+
+    @include tablet {
+        .column {
+            width: 100%;
+            padding: 10px;
+        }
+    }  
+
+.name_email {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid color(primary-line-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.name_email_row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+
+    .name_email_div {
+        flex: 50%;
+        margin: 0px;
+        padding: 5px;
+
+        @include phone {
+              flex: 100%;
+          }
+    }
+
+}
+
+textarea {
+    @extend .name_email;
+    display: block;
+    padding: 8px;
+}
+
+.message_box {
+
+    input[type=submit] {
+        background: color(primary-light-blue);
+        color: color(primary-dark);
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+            background: color(primary-dark-blue);
+            color: color(primary-line-color);
+        }
+    }
+
+}
+
+// details contact 
+.contact_container {
+    background: color(grey-color);
+    margin: 0px;
+    padding: 20px;
+    border-radius: 4px;
+    width: 100%;
+
+    hr {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    @include tablet {
+        text-align: center;
+    }
+  }
+
+.container {
+    border-radius: 5px;
+    background-color: color(light-grey-color);
+    padding: 20px;
+}
+
+}
 
 
 //footer
