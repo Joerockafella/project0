@@ -1,0 +1,44 @@
+
+// All colors
+
+$colors: (
+    //have to delete this 
+    home_text: #fff6bb, //primary
+    btn_color: #8DB9ED, //primary-light-blue
+    btn_hover: #2F4F4F, //primary-dark-blue
+    line_color: #ccc, //primary-line-color
+    contact_right_bg: #ddd, //grey-color
+    footer_bg: rgb(35,36,38) //primary-dark 
+
+    home: (
+        all_text: #fff6bb,
+    ),
+
+    hover: (
+        bg: #8DB9ED,
+    ),
+
+    btn_hover: (
+        bg: #2f4f4f,
+        tt: #ccc,
+    ),
+
+    hover_overlay: (
+        bg: #8DB9ED,
+        tt: rgb(35,36,38),
+    ),
+
+    container: (
+        bg: #ddd,
+    ),
+
+    line: (
+        #ccc,
+    ),
+
+    footer: (
+        bg: rgb(35,36,38),
+        tt: #fff6bb,
+    )
+
+);
