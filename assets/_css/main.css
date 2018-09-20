@@ -499,12 +499,6 @@ body .row {
   margin: 0px;
 }
 
-body .row .row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 body .row .column {
   float: left;
   padding: 40px;
@@ -668,7 +662,8 @@ body footer .footer_overlap {
 
 @media (max-width: 480px) {
   body footer .footer_overlap {
-    padding: 0px;
+    padding: 5px;
+    font-size: 4vw;
   }
 }
 
