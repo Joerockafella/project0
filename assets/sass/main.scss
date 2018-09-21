@@ -304,6 +304,7 @@ body {
                 @include phone {
                     padding: 0px;
                     margin: 0px;
+                    font-size: 4.5vw;
                 }
             }
 
@@ -324,6 +325,9 @@ body {
             @include tablet {
                 margin: 0px;
                 flex-flow: row wrap;
+            }
+            @include phone {
+                font-size: 4.5vw;
             }
 
 

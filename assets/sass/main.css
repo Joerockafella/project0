@@ -344,6 +344,7 @@ body .row_flex .details_aboutMe_row .myInfo {
   body .row_flex .details_aboutMe_row .myInfo {
     padding: 0px;
     margin: 0px;
+    font-size: 4.5vw;
   }
 }
 
@@ -376,6 +377,12 @@ body .row_flex .skills_section {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  body .row_flex .skills_section {
+    font-size: 4.5vw;
   }
 }
 
