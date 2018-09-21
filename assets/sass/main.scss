@@ -13,19 +13,19 @@ $colors: (
 }
 
 
-$desktop: 1024px; 
+$tablet: 1024px; 
 $phone: 480px;
-$tablet: 1380px;
-$small: 300px;
+$wide-screen: 1380px;
+$mini-screen: 300px;
 
-@mixin desktop {
-    @media (max-width: #{$desktop}) {
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
         @content;
     }
 }
 
-@mixin tablet {
-    @media (max-width: #{$tablet}) {
+@mixin wide-screen {
+    @media (max-width: #{$wide-screen}) {
         @content;
     }
 }
@@ -36,8 +36,8 @@ $small: 300px;
     }
 }
 
-@mixin small {
-    @media (max-width: #{$small}) {
+@mixin mini-screen {
+    @media (max-width: #{$mini-screen}) {
         @content;
     }
 }
@@ -64,7 +64,7 @@ body {
 			height: inherit;
             line-height: inherit;
 
-            @include small {
+            @include mini-screen {
                 font-size: 7vw;
                 margin: 0px;
             }
@@ -99,14 +99,14 @@ body {
             align-content: center;
             margin: 20px;
 
-            @include tablet {
+            @include wide-screen {
                 margin-left: auto;
                 margin-right: auto;
                 text-align: center;
             }
            
 
-            @include desktop {
+            @include tablet {
                 margin-left: auto;
                 margin-right: auto;
                 max-width: 100%;
@@ -154,7 +154,7 @@ body {
                 margin-bottom: 40px;
             }
 
-            @include tablet {
+            @include wide-screen {
                 margin-bottom: 40px;
             }
         }
@@ -166,7 +166,7 @@ body {
             box-shadow: 0 15px 15px -10px color(primary-light-blue) inset; 
             border: 0;
 
-            @include tablet {
+            @include wide-screen {
                 margin-left: auto;
                 margin-right: auto;
                 width: 80%;
@@ -189,11 +189,11 @@ body {
             border-radius: 4px;
             display: block;
 
-            @include small {      
+            @include mini-screen {      
                 font-size: 4.5vw;
             }
 
-            @include tablet {      
+            @include wide-screen {      
                 margin-left: auto;
                 margin-right: auto;
 
@@ -211,7 +211,7 @@ body {
             border-radius: 4px;
             cursor: pointer;
 
-            @include small {
+            @include mini-screen {
                 font-size: 4.5vw;
             }
 
@@ -221,7 +221,7 @@ body {
               }
         }
  
-        @include small {
+        @include mini-screen {
             margin-left: auto;
             margin-right: auto;
         }
@@ -231,7 +231,7 @@ body {
     }
 
     .responsive {
-        @include desktop {
+        @include tablet {
             display: block;
             flex-wrap: wrap;
             flex-direction: row;
@@ -258,7 +258,7 @@ body {
                 border-width: 3px;
                 background: color(primary-line-color);
 
-                @include tablet {
+                @include wide-screen {
                     width: 30%;
                 }
 
@@ -306,7 +306,7 @@ body {
                     padding:0px;
                     border-radius: 40px;
                 }
-                @include tablet {
+                @include wide-screen {
                     padding: 0px;
                     margin-left: auto;
                     margin-right: auto;
@@ -318,7 +318,7 @@ body {
                         margin: 10px;
                     }
 
-                    @include tablet {
+                    @include wide-screen {
                         border-radius: 50%;
                         margin: 10px;
                         margin-left: auto;
@@ -341,7 +341,7 @@ body {
                 }
             }
 
-            @include desktop {
+            @include tablet {
                 flex-direction: row;
                 flex-wrap: wrap;
                 width: 100%;
@@ -355,7 +355,7 @@ body {
             width: 100%;
             margin: 20px;
 
-            @include desktop {
+            @include tablet {
                 margin: 0px;
                 flex-flow: row wrap;
             }
@@ -363,13 +363,13 @@ body {
 
             .skills_heading {
                 width: 40%;
-                @include desktop {
+                @include tablet {
                     width: 100%;
                 }
 
                 h3 {
                     float: right;
-                    @include desktop {
+                    @include tablet {
                         float: none;
                         text-align: left;
                     }
@@ -381,7 +381,7 @@ body {
                 width: 60%;
                 margin-left: 60px;
 
-                @include desktop {
+                @include tablet {
                     width: 100%;
                     margin-left: 80px;
                 }
@@ -504,7 +504,7 @@ body {
         }
     }
 
-    @include tablet {
+    @include wide-screen {
         .column {
             width: 100%;
             padding: 10px;
@@ -576,7 +576,7 @@ body {
         margin-bottom: 40px;
     }
 
-    @include tablet {
+    @include wide-screen {
         text-align: center;
     }
   }
@@ -687,7 +687,7 @@ body {
           
     }
 
-    @include small {
+    @include mini-screen {
         font-size: 4vw;
     }
     
