@@ -2,50 +2,36 @@
 // All colors
 
 $colors: (
-    //have to delete this 
-    home_text: #fff6bb, //primary
-    btn_color: #8DB9ED, //primary-light-blue
-    btn_hover: #2F4F4F, //primary-dark-blue
-    line_color: #ccc, //primary-line-color
-    contact_right_bg: #ddd, //grey-color
-    footer_bg: rgb(35,36,38) //primary-dark 
 
     home: (
-        all_text: #fff6bb,
+        all_text: #fff6bb, //primary
     ),
 
     hover: (
-        bg: #8DB9ED,
+        bg: #8DB9ED, //primary-light-blue
     ),
 
     btn_hover: (
-        bg: #2f4f4f,
-        tt: #ccc,
+        bg: #2f4f4f, //primary-dark-blue
+        tt: #ccc, //primary-line-color
     ),
 
     hover_overlay: (
-        bg: #8DB9ED,
-        tt: rgb(35,36,38),
+        bg: #8DB9ED, //primary-light-blue
+        tt: rgb(35,36,38), //primary-dark 
     ),
 
     container: (
-        bg: #ddd,
+        bg: #ddd, //grey-color
     ),
 
     line: (
-        #ccc,
+        #ccc, //primary-line-color
     ),
 
     footer: (
-        bg: rgb(35,36,38),
-        tt: #fff6bb,
+        bg: rgb(35,36,38), //primary-dark
+        tt: #fff6bb, //primary
     )
 
 );
-
-// breakpoints
-
-$wide-screen: 1380px; //tablet
-$tablet: 1024px; //desktop
-$phone: 480px; // phone
-$mini-screen: 300px; // small

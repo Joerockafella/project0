@@ -1,3 +1,9 @@
+
+$wide-screen: 1380px;
+$tablet: 1024px; 
+$phone: 480px; 
+$mini-screen: 300px; 
+
 @mixin wide-screen {
     @media (max-width: #{$wide-screen}) {
         @content;

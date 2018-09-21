@@ -1,3 +1,4 @@
+
 $colors: (
     primary: #fff6bb,
     primary-light-blue: #8DB9ED,
@@ -13,34 +14,7 @@ $colors: (
 }
 
 
-$tablet: 1024px; 
-$phone: 480px;
-$wide-screen: 1380px;
-$mini-screen: 300px;
-
-@mixin tablet {
-    @media (max-width: #{$tablet}) {
-        @content;
-    }
-}
-
-@mixin wide-screen {
-    @media (max-width: #{$wide-screen}) {
-        @content;
-    }
-}
-
-@mixin phone {
-    @media (max-width: #{$phone}) {
-        @content;
-    }
-}
-
-@mixin mini-screen {
-    @media (max-width: #{$mini-screen}) {
-        @content;
-    }
-}
+@import 'libs/mixins';
 
 body {
 
