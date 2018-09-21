@@ -17,21 +17,24 @@ $colors: (
     ),
 
     hover_overlay: (
-        bg: #8DB9ED, //primary-light-blue
-        tt: rgb(35,36,38), //primary-dark 
+        bg: #8DB9ED, 
+        tt: rgb(35,36,38), 
+        tt_link: #ccc,
+        btn_bg: #2f4f4f,
     ),
 
     container: (
-        bg: #ddd, //grey-color
+        bg: #ddd, 
+        bg_l: #f2f2f2,
     ),
 
-    line: (
-        #ccc, //primary-line-color
+    lines: (
+       luk: #ccc, 
     ),
 
     footer: (
-        bg: rgb(35,36,38), //primary-dark
-        tt: #fff6bb, //primary
+        bg: rgb(35,36,38), 
+        tt: #fff6bb, 
     )
 
 );
