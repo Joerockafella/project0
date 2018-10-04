@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+	Home
+{% endblock %}
+
+{% block main %} 
+<header class="responsive">
+	<div class="headerDiv-content responsive">
+		<div class="myHeading">
+			<h1>Hey there!</h1>
+			<h2>I'm Joe Shindano</h2>
+			<p>a Software Developer</p>
+			<br>
+			<hr class="style">		
+			<br>
+			<pre>Subscribe to my newsletter</pre>
+			<br>
+			<div>
+				<form id="signup-form" method="post" action="#" class="signup">
+					<input type="text" placeholder="Name" name="name" required>
+					<input type="email" name="email" id="email" placeholder="Email Address" required/>
+					<label>
+							<input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+					</label>
+					<div>
+						<input type="submit" value="Subscribe"/>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="header_img">
+			<img src="https://lh3.googleusercontent.com/-D1vcmABUaoU/W5zXGfTOW2I/AAAAAAAAELI/s-KEIZlHdMA0td25ko8J2L8a7mRR9SW1gCJoC/w530-h353-n-rw/img1.jpg" class="img-thumbnail" alt="Photo" width="504" height="200">
+		</div>
+	</div>
+</header>
+{% endblock %}
